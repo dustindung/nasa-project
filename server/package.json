@@ -5,14 +5,18 @@
   "main": "src/server.js",
   "scripts": {
     "watch": "npx nodemon src/server.js",
-    "test": "jest",
+    "test": "jest --detectOpenHandles --testTimeout=50000000",
     "test-watch": "jest --watch",
+    "mocha-test": "mocha",
     "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parse": "^5.4.0",

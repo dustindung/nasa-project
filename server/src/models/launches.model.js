@@ -58,7 +58,7 @@ async function saveLaunch(launch) {
       }
     );
   } catch (err) {
-    console.log(err);
+    console.log(`Can not save launch - ${err}`);
   }
 }
 
