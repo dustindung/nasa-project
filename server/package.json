@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "watch": "npx nodemon src/server.js",
-    "test": "jest --detectOpenHandles --testTimeout=50000000",
+    "test": "jest --detectOpenHandles --testTimeout=180000",
     "test-watch": "jest --watch",
     "mocha-test": "mocha",
     "start": "node src/server.js",
